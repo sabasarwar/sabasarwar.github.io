@@ -1,0 +1,109 @@
+
+/*----------------------------------------------Navigation bar-------------------------------------------------*/
+.navbar
+{
+	display: block;
+}
+
+#nav.affix 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3999;
+  background: #1d1d1d;
+  border-radius: 0; 
+}
+
+#navbar
+{
+	float: right;
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 35px;
+}
+
+#navbar a
+{
+	display: block;
+    margin-left: 25px;
+}
+
+#navbar a:hover, #navbar a:active
+{
+	border-bottom: 2px solid black;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+	font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    padding: 5px 10px;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+/*----------------------------------------Background Image Home Page-----------------------------------------*/
+#background
+{
+	background-image: url("../images/bg02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 625px;
+    width: 1350px;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    opacity: 0.7;
+}
+
+/*----------------------------------------Side Bar-----------------------------------------*/
+.sidebar 
+{
+	position: fixed;
+  	left: 0px;
+  	top: 0px;
+  	bottom: 0px;
+  	width: 120px;
+  	text-align: center;
+  	-webkit-transform: translateX(-100%);
+          	transform: translateX(-100%);
+  	-webkit-transition: 0.2s;
+  	transition: 0.2s; 
+}
+
+.sidebar ul 
+{
+    list-style: none;
+    padding: 0px; 
+}
+
+.sidebar li 
+{
+    margin-top: 35px;
+    margin-bottom: 35px; 
+}
+ 
+.sidebar a 
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ededed;
+    font-weight: 400; 
+}
+    
+.sidebar a:hover 
+{
+    color: rgba(67, 144, 168, 0.9);
+}
+
+.sidebar.fixed 
+{
+  	-webkit-transform: translateX(0);
+          	transform: translateX(0); 
+}
