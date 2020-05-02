@@ -147,7 +147,7 @@ h1
   border-bottom: 2.5px solid #0a9174;
   float: center;
   margin-left: 490px;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 25px;
   padding: 8px;
   text-transform: uppercase;
@@ -213,34 +213,49 @@ h1
   height: 30em;
   box-shadow: 0 0 6px rgba(0,0,0,.4);
 }
+
 article 
 {
   position: absolute;
-  left: 0;
-  top: 4rem;
-  right: 0;
-  bottom: 0;
-  padding: 1rem 2rem 0;
   overflow: auto;
   transition: .7s;
   transform: scale(0);
-  transform-origin: center;
+  transform-origin: left;
   transition-delay: .1s;
+  margin-bottom: 20px;
+  transition-timing-function: ease-in-out;
 }
-
 article:before 
 {
-  color: red;
+  color: rgba(0,0,0,.3);
   font-size: 4rem;
   font-weight: 100;
   position: absolute;
 }
 
-#edu-content p 
+#edu-content p
 {
   line-height: 1.5;
-  font-size: 1.3rem;
-  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  color: white;
+}
+
+#edu-content .content-header p
+{
+  font-weight: bold;
+}
+
+#edu-content .content-header
+{
+  margin-bottom: 10px;
+  background-color: #008060;
+  padding: 0.7em 0em 0.1em 2em;
+
+}
+
+#edu-content .content-body
+{
+  margin: 2em;
 }
 
 #edu-content nav 
@@ -253,9 +268,9 @@ article:before
 #edu-content nav:after 
 {
   content:'';
-  width: 33%;
+  width: 33.33%;
   height: 4rem;
-  background: #bee3d1;
+  background: #BEE3D1;
   position: absolute;
   transition: .5s;
 }
@@ -265,7 +280,7 @@ article:before
 }
 #edu-content label 
 {
-  width: 33%;
+  width: 33.33%;
   float: left;
   color: #BEE3D1;
   text-align: center;
@@ -273,18 +288,13 @@ article:before
   transition: .5s;
   z-index: 2;
 }
-#edu-content label:hover 
-{
-  color: #1E6743;
-}
-#edu-content label:before 
-{
+#edu-content label:hover {color: #1E6743;}
+#edu-content label:before {
   display: block;
   font-size: 3rem;
   line-height: 4rem;
   z-index: 2;
 }
-
 #edu1:checked ~ nav [for='edu1'],
 #edu2:checked ~ nav [for='edu2'],
 #edu3:checked ~ nav [for='edu3'] 
@@ -293,44 +303,29 @@ article:before
   font-weight: 400;
 }
 
-#edu1:checked ~ nav:after 
-{
+
+#edu1:checked ~ nav:after {
   left: 0;
 }
-
-#edu2:checked ~ nav:after 
-{
-  left:33%;
+#edu2:checked ~ nav:after {
+  left:33.5%;
   border-top: 0 none;
 }
-
-#edu3:checked ~ nav:after
-{
-  left:67%;
-  border-top: 0 none;
+#edu3:checked ~ nav:after {
+  left: 66.7%;
 }
+
 
 #edu1:checked ~ .content1,
 #edu2:checked ~ .content2,
-#edu3:checked ~ .content3,
+#edu3:checked ~ .content3 
 {
   display: block;
   transform: scale(1);
   transition-delay: .5s; 
 }
-
-#edu-content a 
-{
-  color: rgba(0,0,0,.4);
-}
-
-#edu-content a:hover 
-{
-  color: rgba(0,0,0,.2);
-}
-
-
-
+#edu-content a {color: rgba(0,0,0,.4)}
+#edu-content a:hover {color: rgba(0,0,0,.2)}
 
 
 /*----------------------------------------Skills Section-----------------------------------------*/
