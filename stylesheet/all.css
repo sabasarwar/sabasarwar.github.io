@@ -59,10 +59,15 @@ html
   margin-left: 25px;
 }
 
-#navbar a:hover
+#navbar a:hover:after
 {
-  color: #0a9174;
-	border-bottom: 2px solid #0a9174;
+  content: "";
+  display: block;
+  width: 50%;
+  color: #ffffff;
+  margin-left: 25%;
+  padding-top: 10px;
+	border-bottom: 2.5px solid #0086b3;
 }
 
 #navbar a:active, #active
@@ -119,32 +124,50 @@ h1
 /*----------------------------------------Background Image Home Page-----------------------------------------*/
 #background
 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg06.jpg);
+  background-image: linear-gradient(to right, rgba(0, 51, 70, 0.6), rgba(51, 77, 77, 0.8)), url(../images/d6.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
- /* width: 1350px;*/
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
   margin-top: 0px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /*-----------------------------------------Common in all Sections--------------------------------------------*/
 
+/*colour used mostly
+
+text -> dark blue : #0a335c , rgba(0, 51, 102, 0)
+
+div -> blue :  #123354 , rgb(18, 51, 84) or #0b628e rgb(11, 98, 142)
+
+text border -> #0086b3
+
+
+
+*/
+
+
 .section-div1
 {
-  background-color: white;
-  opacity: 0.9;
-  margin-left: 125px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 1100px;
+  margin: 50px 125px 30px 125px;
   float: center;
-  width: 1100px;
-  margin-top: 50px;
 }
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+{
+  max-width: 300px;
+} 
 
 .section-heading1
 {
   color: #000000;
-  border-bottom: 2.5px solid #0a9174;
   float: center;
   margin-left: 490px;
   margin-top: 25px;
@@ -154,21 +177,27 @@ h1
   text-decoration: none;
 }
 
+.section-heading1:after
+{
+  content: "";
+  display: block;
+  margin-left: 25%;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 2.5px solid #0086b3;
+}
+
 .section-div2
 {
-  background-color: #0a9174;
-  opacity: 0.9;
-  margin-left: 125px;
+  background-color: rgba(11, 98, 142,0.5);
+  margin: 50px 125px 40px 125px;
   float: center;
   width: 1100px;
-  margin-top: 30px;
-
 }
 
 .section-heading2
 {
   color: #ffffff;
-  border-bottom: 2.5px solid #0a9174;
   float: center;
   margin-left: 490px;
   margin-top: 25px;
@@ -178,17 +207,27 @@ h1
   text-decoration: none;
 }
 
-.section-div3
+.section-heading2:after
 {
-  background-color: #000000;
-  opacity: 0.9;
-  margin-left: 125px;
-  float: center;
-  width: 1100px;
-  margin-top: 40px;
+  content: "";
+  display: block;
+  margin-left: 25%;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 2.5px solid #0086b3;
 }
 
-/*----------------------------------------About Section-----------------------------------------*/
+.section-div3
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 50px 125px 40px 125px;
+  float: center;
+  width: 1100px;
+
+}
+
+
+/*----------------------------------------About Section------------------------------------------*/
 
 .profile-pic 
 {
@@ -199,17 +238,18 @@ h1
   border-radius: 50%;
   border-width: 2.5px;
   border-style: solid;
-  border-color: #88ddc1;
+  border-color: #0086b3;
+  box-shadow:20px 20px 50px 15px rgba(31, 92, 122, 0.4);
   z-index:1;
   top:0;
 }
 
 
-/*----------------------------------------Education Section-----------------------------------------*/
+/*----------------------------------------Education Section---------------------------------------*/
 
 #edu-content 
 {
-  background: #0a9174;
+/*  background: #0a9174;*/
   height: 520px;
   box-shadow: 0 0 6px rgba(0,0,0,.6);
 }
@@ -236,7 +276,9 @@ article:before
 {
   line-height: 1.5;
   font-size: 1.1rem;
-/*  color: white;*/
+  color: white;
+  z-index: 1;
+  opacity: 1;
 }
 
 #edu-content .content-header p
@@ -249,7 +291,7 @@ article:before
 {
   margin-bottom: 10px;
   width: 100% !important;
-  background-color: #008060;
+  background-color: #0a335c;
   padding: 0.7em 0em 0.1em 2em;
 
 }
@@ -264,14 +306,14 @@ article:before
   background: #fff;
   width: 100%;
   height: 64px;
-  box-shadow: 0 0 6px rgba(0,0,0,.4);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.4);
 }
 #edu-content nav:after 
 {
   content:'';
   width: 33.33%;
   height: 64px;
-  background: #BEE3D1;
+  background: rgba(11, 98, 142, 0.4);
   position: absolute;
   transition: .5s;
 }
@@ -283,13 +325,13 @@ article:before
 {
   width: 33.33%;
   float: left;
-  color: #BEE3D1;
+  color:  #0a335c;
   text-align: center;
   cursor: pointer;
   transition: .5s;
   z-index: 2;
 }
-#edu-content label:hover {color: #1E6743;}
+#edu-content label:hover {color:  #0a335c;}
 #edu-content label:before {
   display: block;
   font-size: 45px;
@@ -300,7 +342,7 @@ article:before
 #edu2:checked ~ nav [for='edu2'],
 #edu3:checked ~ nav [for='edu3'] 
 {
-  color: #1E6743;
+  color: #0a335c;
   font-weight: 400;
 }
 
@@ -328,13 +370,15 @@ article:before
 #edu-content a {color: rgba(0,0,0,.4)}
 #edu-content a:hover {color: rgba(0,0,0,.2)}
 
+/*slide bar*/
+
 .content1
 {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 73vh; 
-  background: linear-gradient(0deg, #00664d 1%, #ecf9f2);
+/*  background: linear-gradient(0deg, #00664d 1%, #ecf9f2);*/
   border:0;
 }
 
@@ -355,7 +399,7 @@ article:before
   position: relative;
   width: 270px;
   height: 170px;
-  background: #ecf9f2;
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,7 +426,7 @@ article:before
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ecf9f2;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 1;
   transition: 0.5s;
   border-radius: 5%;
@@ -390,9 +434,9 @@ article:before
 
 .content1 .card:hover:before
 {
-  background: #008060;
+  background: rgba(255, 255, 255, 0.9);
   transform: scaleY(1.15);
-  box-shadow: 15px 20px 20px rgba(159, 223, 190, 0.6);
+  box-shadow: 0px 15px 20px 5px rgba(255, 255, 255, 0.3);
   border-radius: 5%;
 }
 
@@ -403,12 +447,12 @@ article:before
   z-index: 2;
   padding: 0 20px;
   transition: 0.5s;
-  color: #00664d;
+  color: #0a335c;
 }
 
 .content1 .card:hover .content
-{
-  color: #ecf9f2;
+{ 
+  color: #0a335c;
 }
 
 
@@ -428,16 +472,16 @@ article:before
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 0 15px;
-  color: #ecf9f2;
+  color:  #0a335c;
   text-decoration: none;
   border-radius: 5%;
 }
 
 .content1 .card:hover .content a
 {
-  background:#ecf9f2;
+  background: #0a335c ;
   border-radius: 5%;
-  color: #00664d;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -459,11 +503,30 @@ article:before
   float: center;
   padding: 3px 12px 3px 12px;
   margin-left: 30px;
-  background-color: #0a9174;
+  background-color: #0a335c;
   color: #ffffff;
 }
 
+
+/*----------------------------------------Skills Section-----------------------------------------*/
+
+footer .container 
+{
+/*  background: #000000;
+  opacity: 0.9;*/
+  margin: 20px 125px 0 125px;
+  width: 1100px;
+  display: flex;
+}
+footer .cc p 
+{
+  margin-left: 500px;
+  float: center;
+  font-size: 15px;
+}
+
 /*----------------------------------------Side Bar-----------------------------------------*/
+
 .sidebar 
 {
 	position: fixed;
