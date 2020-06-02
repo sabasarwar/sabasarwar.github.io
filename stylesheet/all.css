@@ -139,13 +139,13 @@ h1
 
 /*colour used mostly
 
-text -> dark blue : #0a335c , rgba(0, 51, 102, 0)
+text -> dark blue : #0a335c , rgba(0, 51, 102, 0)  
+                   or  rgb(0, 68, 102)
 
-div -> blue :  #123354 , rgb(18, 51, 84) or #0b628e rgb(11, 98, 142)
+div -> blue :  #123354 , rgb(18, 51, 84) 
+              or #0b628e rgb(11, 98, 142)
 
 text border -> #0086b3
-
-
 
 */
 
@@ -250,7 +250,7 @@ and (max-device-width: 480px)
 #edu-content 
 {
 /*  background: #0a9174;*/
-  height: 520px;
+  height: 560px;
   box-shadow: 0 0 6px rgba(0,0,0,.6);
 }
 
@@ -258,10 +258,10 @@ article
 {
   position: absolute;
   overflow: auto;
-  transition: .7s;
+  transition: .3s;
   transform: scale(0);
   transform-origin: center;
-  transition-delay: .2s;
+  transition-delay: .1s;
   margin-bottom: 20px;
 }
 article:before 
@@ -371,15 +371,150 @@ article:before
 #edu-content a {color: rgba(0,0,0,.4)}
 #edu-content a:hover {color: rgba(0,0,0,.2)}
 
-/*slide bar*/
 
+
+
+.card
+{
+  margin: 1em 10em 1em 10em;
+  padding: 1em;
+  background: rgba(0, 68, 102, 0.9);
+  border-radius: 1%;
+}
+
+#edu-content .content1 ul
+{
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid #ffffff;
+}
+
+#edu-content .content1 ul li
+{
+  list-style: none;
+}
+
+#edu-content .content1 ul .item
+{
+  position: relative;
+  padding: 1em 0.7em;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+#edu-content .content1 ul li .item:hover
+{
+  background:  rgba(255, 255, 255, 0.9);
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+#edu-content .content1 ul li .item:before
+{
+  content: " ";
+  position: absolute;
+  top: 21px;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1);
+}
+
+#edu-content .content1 ul li .item:after
+{
+  content: " ";
+  position: absolute;
+  top: 21px;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  background:rgb(179, 0, 89);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(255,255,0,0.1);
+}
+
+#edu-content .content1 ul li .item:hover:after
+{
+  animation: animate .5s linear infinite;
+}
+
+#edu-content .content1 ul li .item span
+{
+  padding: 0.4em 1.2em;
+  background: rgb(179, 0, 89);
+  border-radius: 15px;
+  color: #fff;
+}
+
+#edu-content .content1 ul li .item:hover span
+{
+  background: rgb(0, 68, 102);
+}
+
+
+#edu-content .content1 ul li .item h3
+{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+#edu-content .content1 ul li .item:hover h3
+{
+  color: #000000;
+}
+
+#edu-content .content1 ul li .item p
+{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+#edu-content .content1 ul li .item:hover p
+{
+  color: #000000;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*old education section */
+/*
 .content1
 {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 73vh; 
-/*  background: linear-gradient(0deg, #00664d 1%, #ecf9f2);*/
+  background: linear-gradient(0deg, #00664d 1%, #ecf9f2);
   border:0;
 }
 
@@ -491,7 +626,7 @@ article:before
 {
   width: 100%;
   height: 250px;
-}
+}*/
 
 /*----------------------------------------Skills Section-----------------------------------------*/
 
