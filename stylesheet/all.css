@@ -250,7 +250,9 @@ and (max-device-width: 480px)
 #edu-content 
 {
 /*  background: #0a9174;*/
-  height: 560px;
+  height: auto;
+  min-height: 560px;
+  max-height: 700px;
   box-shadow: 0 0 6px rgba(0,0,0,.6);
 }
 
@@ -382,19 +384,19 @@ article:before
   border-radius: 1%;
 }
 
-#edu-content .content1 ul
+#edu-content article ul
 {
   margin: 0;
   padding: 0;
   border-left: 3px solid #ffffff;
 }
 
-#edu-content .content1 ul li
+#edu-content article ul li
 {
   list-style: none;
 }
 
-#edu-content .content1 ul .item
+#edu-content article ul .item
 {
   position: relative;
   padding: 1em 0.7em;
@@ -402,14 +404,14 @@ article:before
   border-bottom-right-radius: 1%;
 }
 
-#edu-content .content1 ul li .item:hover
+#edu-content article ul li .item:hover
 {
   background:  rgba(255, 255, 255, 0.9);
   border-top-right-radius: 1%;
   border-bottom-right-radius: 1%;
 }
 
-#edu-content .content1 ul li .item:before
+#edu-content article ul li .item:before
 {
   content: " ";
   position: absolute;
@@ -422,7 +424,7 @@ article:before
   box-shadow: inset 0 0 10px rgba(0,0,0,1);
 }
 
-#edu-content .content1 ul li .item:after
+#edu-content article ul li .item:after
 {
   content: " ";
   position: absolute;
@@ -435,12 +437,12 @@ article:before
   box-shadow: inset 0 0 10px rgba(255,255,0,0.1);
 }
 
-#edu-content .content1 ul li .item:hover:after
+#edu-content article ul li .item:hover:after
 {
   animation: animate .5s linear infinite;
 }
 
-#edu-content .content1 ul li .item span
+#edu-content article ul li .item span
 {
   padding: 0.4em 1.2em;
   background: rgb(179, 0, 89);
@@ -448,32 +450,31 @@ article:before
   color: #fff;
 }
 
-#edu-content .content1 ul li .item:hover span
+#edu-content article ul li .item:hover span
 {
   background: rgb(0, 68, 102);
 }
 
-
-#edu-content .content1 ul li .item h3
+#edu-content article ul li .item h3
 {
   margin: 10px 0 0;
   padding: 0;
   color: #ffffff;
 }
 
-#edu-content .content1 ul li .item:hover h3
+#edu-content article ul li .item:hover h3
 {
   color: #000000;
 }
 
-#edu-content .content1 ul li .item p
+#edu-content article ul li .item p
 {
   margin: 10px 0 0;
   padding: 0;
   color: #ffffff;
 }
 
-#edu-content .content1 ul li .item:hover p
+#edu-content article ul li .item:hover p
 {
   color: #000000;
 }
@@ -495,139 +496,6 @@ article:before
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*old education section */
-/*
-.content1
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 73vh; 
-  background: linear-gradient(0deg, #00664d 1%, #ecf9f2);
-  border:0;
-}
-
-.content1-body
-{
-  max-width: 1000px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  transition: 0.5s;
-}
-
-.content1 .card
-{
-  margin-top: 5em;
-  margin-left: 7em;
-  position: relative;
-  width: 270px;
-  height: 170px;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  border-radius: 5%;
-}
-
-.content1:hover .card
-{
-  filter: blur(5px);
-  transform: scale(0.7);
-}
-
-.content1 .card:hover
-{
-  filter: blur(0px);
-  transform: scale(1);
-  border-radius: 5%;
-}
-
-.content1 .card:before
-{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  transition: 0.5s;
-  border-radius: 5%;
-}
-
-.content1 .card:hover:before
-{
-  background: rgba(255, 255, 255, 0.9);
-  transform: scaleY(1.15);
-  box-shadow: 0px 15px 20px 5px rgba(255, 255, 255, 0.3);
-  border-radius: 5%;
-}
-
-.content1 .card .content
-{
-  margin-top: 0.8em;
-  text-align: center;
-  z-index: 2;
-  padding: 0 20px;
-  transition: 0.5s;
-  color: #0a335c;
-}
-
-.content1 .card:hover .content
-{ 
-  color: #0a335c;
-}
-
-
-.content1 .card .content h2
-{
-  font-size: 1.1em;
-}
-
-.content1 .card .content p
-{
-  font-size: 0.6em;
-}
-
-.content1 .card .content a
-{
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 0 15px;
-  color:  #0a335c;
-  text-decoration: none;
-  border-radius: 5%;
-}
-
-.content1 .card:hover .content a
-{
-  background: #0a335c ;
-  border-radius: 5%;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-
-.content1
-{
-  width: 100%;
-  height: 250px;
-}*/
-
 /*----------------------------------------Skills Section-----------------------------------------*/
 
 .panel-body .skill1
@@ -644,7 +512,7 @@ article:before
 }
 
 
-/*----------------------------------------Skills Section-----------------------------------------*/
+/*----------------------------------------Footer Section-----------------------------------------*/
 
 footer .container 
 {
