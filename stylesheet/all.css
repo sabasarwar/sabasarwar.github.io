@@ -259,7 +259,7 @@ and (max-device-width: 480px)
 article 
 {
   position: absolute;
-  overflow: auto;
+/*  overflow: auto;*/
   transition: .3s;
   transform: scale(0);
   transform-origin: center;
@@ -455,14 +455,14 @@ article:before
   background: rgb(0, 68, 102);
 }
 
-#edu-content article ul li .item h3
+#edu-content article ul li .item h5
 {
   margin: 10px 0 0;
   padding: 0;
   color: #ffffff;
 }
 
-#edu-content article ul li .item:hover h3
+#edu-content article ul li .item:hover h5
 {
   color: #000000;
 }
