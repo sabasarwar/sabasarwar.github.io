@@ -158,7 +158,7 @@ text border -> #0086b3
 .section-div1
 {
   background-color: rgba(255, 255, 255, 0.9);
-/*  max-width: 1100px;*/
+  max-width: 1100px;
   margin: 50px 125px 30px 125px;
   float: center;
 }
@@ -254,7 +254,6 @@ and (max-device-width: 480px)
 
 #edu-content 
 {
-/*  background: #0a9174;*/
   height: 560px;
   box-shadow: 0 0 6px rgba(0,0,0,.6);
 }
