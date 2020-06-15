@@ -614,7 +614,7 @@ article:before
   width: 50px;
   z-index: 2;
 }
-/*
+
 @media screen and (max-width: 990px)
 {
   #skills .container
@@ -631,7 +631,7 @@ article:before
     grid-template-columns: 1fr;
   }
 }
-*/
+
 /*----------------------------------------Footer Section-----------------------------------------*/
 
 footer .container 
