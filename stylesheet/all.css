@@ -500,7 +500,7 @@ article:before
 
 /*----------------------------------------Skills Section-----------------------------------------*/
 
-.panel-body .skill1
+#defaultOpen
 {
   margin-left: 300px;
 }

@@ -240,7 +240,7 @@
 <!----------------------------------------------------------- Skills Section ------------------------------------------------------->
 
 		<section class="section-div1" id="skills">
-			<div class="containe-fluid">
+			<div class="container-fluid">
 				<div class="row panel">
 					<div class="panel-heading">
 						<h4 class="section-heading1">Skills</h4>
@@ -248,14 +248,54 @@
 				</div>
 
 				<div class="row panel">
-					<!-- <div class="panel-body">
-						<button type="button" class="btn btn-default btn-sm skills skill1">Programming</button>
-						<button type="button" class="btn btn-default btn-sm skills">Web Development</button>
-						<button type="button" class="btn btn-default btn-sm skills">DevOps</button>
-						<button type="button" class="btn btn-default btn-sm skills">Others</button>
-					</div> -->
+					<div class="panel-body">
+						<button class="skills btn btn-default btn-sm" id="defaultOpen">Programming</button>
+						<button class="skills btn btn-default btn-sm">Web Development</button>
+						<button class="skills btn btn-default btn-sm">DevOps</button>
+						<button class="skills btn btn-default btn-sm">Others</button>
+					</div>
 
-					<div class="container panel-body">
+					<div id="programming" class="container panel-body skillcontent">
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/c-language.png" class="skill-icon">
+								</div>
+								<h5>C</h5>
+							</div>
+						</div>
+
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/c++.png" class="skill-icon">
+								</div>
+								<h5>C++</h5>
+							</div>
+						</div>
+
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/java.png" class="skill-icon">
+								</div>
+								<h5>Java</h5>
+							</div>
+						</div>
+
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/javascript.png" class="skill-icon">
+								</div>
+								<h5>JS</h5>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="container panel-body skillcontent" id="webdev">
 						<div class="skill-box">
 							<div class="skill-title">
 								<div class="img">
@@ -307,6 +347,43 @@
 									<img src="./images/logo/php02.png" class="skill-icon">
 								</div>
 								<h5>PHP</h5>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="container panel-body skillcontent" id="devops">
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/docker02.png" class="skill-icon">
+								</div>
+								<h5>Docker</h5>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="container panel-body skillcontent" id="others">
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/mysql.jpg" class="skill-icon">
+								</div>
+								<h5>MySql</h5>
+							</div>
+						</div>
+
+						<div class="skill-box">
+							<div class="skill-title">
+								<div class="img">
+									<img src="./images/logo/postman.png" class="skill-icon">
+								</div>
+								<h5>Postman</h5>
 							</div>
 						</div>
 					</div>
@@ -389,7 +466,6 @@
 
 	<!-- Swiper JS -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/js/swiper.min.js"></script>
-
 
 
 </body>
