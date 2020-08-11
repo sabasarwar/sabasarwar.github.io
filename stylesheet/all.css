@@ -76,12 +76,10 @@ html, body
   padding-top: 10px;
 	border-bottom: 2.5px solid #0086b3;
 }
-
 #navbar a:active, #active
 {
   color: #0a9174;
 }
-
 .navbar-light .navbar-nav .nav-link
 {
 	font-size: 15px;
@@ -91,7 +89,6 @@ html, body
   text-transform: uppercase;
   font-weight: bold;
 }
-
 #navbar a:visited
 {
   font-size: 15px;
