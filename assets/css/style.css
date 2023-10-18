@@ -418,7 +418,8 @@ img {
 }
 
 .about__description {
-  text-align: center;
+  /* text-align: center; */
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -1134,7 +1135,8 @@ footer .footer__social a:hover {
   }
 
   .about__description {
-    text-align: initial;
+    /* text-align: initial; */
+    text-align: justify;
   }
 
   .about__info {
